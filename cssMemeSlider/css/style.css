@@ -18,16 +18,28 @@ body {
   font-weight: 400;
 }
 
+header {
+  background-color: #88cdd7;
+  height: 10vh;
+  font-size: 2.5vw;
+}
+
+h1 {
+  line-height: 10vh;
+  color: rgb(46, 46, 46, 0.8);
+  text-align: center;
+  margin: 0;
+}
+
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-
-  padding-bottom: 10vh;
+  height: 85vh;
   background-color: rgb(46, 46, 46);
 }
+
 
 .slider {
   overflow: hidden;
@@ -46,13 +58,6 @@ body {
   height: 100vh;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-}
-
 .slides {
   display: flex;
   width: 500%;
@@ -68,6 +73,13 @@ body {
 .slide__image {
   width: 100%;
   height: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 .captions {
@@ -97,7 +109,7 @@ body {
 
 .control {
   background-color: #88cdd7;
-  
+  border: 0.1rem solid #88cdd7;
   padding: 0.4rem;
   margin: 0.5rem;
   border-radius: 50%;
@@ -134,7 +146,7 @@ body {
   border: 0.1rem solid #88cdd7;
 }
 
-#radio-5:checked~.wrapper.nav-labels label:nth-child(5) {
+#radio-5:checked~.wrapper .nav-labels label:nth-child(5) {
   background-color: transparent;
   border: 0.1rem solid #88cdd7;
 }
@@ -176,7 +188,6 @@ body {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-/* Показать подпись, когда соответствующая радио-кнопка нажата */
 #radio-1:checked~.wrapper .captions .caption:nth-child(1) {
     opacity: 1;
     transform: translateX(0);
@@ -191,9 +202,23 @@ body {
   }
 #radio-4:checked~.wrapper .captions .caption:nth-child(4) {
     opacity: 1;
-    transform: translateX(-136%);
+    transform: translateX(-173%);
   }
 #radio-5:checked~.wrapper .captions .caption:last-child {
     opacity: 1;
-    transform: translateX(-428%);
+    transform: translateX(-389%);
   }
+
+.footer {
+  width: 100%;
+  height: 5vh;
+  background-color: #88cdd7;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(46, 46, 46);
+  font-size: 0.8rem;
+  letter-spacing: .1rem;
+}
