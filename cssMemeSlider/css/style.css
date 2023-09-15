@@ -130,11 +130,6 @@ h1 {
   transition: .5s;
 }
 
-.circle:hover {
-  background-color: white;
-  border: 0.1vw solid white;
-}
-
 .control:active .circle {
   background-color: rgb(255, 238, 0);
   border: 0.1vw solid rgb(255, 238, 0);
@@ -239,5 +234,13 @@ svg {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 1rem;
+  }
+  #radio-1:checked~.wrapper .nav-labels .control:nth-child(1) .circle,
+  #radio-2:checked~.wrapper .nav-labels .control:nth-child(2) .circle,
+  #radio-3:checked~.wrapper .nav-labels .control:nth-child(3) .circle,
+  #radio-4:checked~.wrapper .nav-labels .control:nth-child(4) .circle,
+  #radio-5:checked~.wrapper .nav-labels .control:nth-child(5) .circle {
+    background-color: transparent;
+    border: 0.1vw solid #2954f2;
   }
 }
