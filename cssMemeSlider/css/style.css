@@ -57,7 +57,7 @@ h1 {
 
 .slider input {
   display: none;
-  height: 100svh;
+  height: 85svh;
 }
 
 .slides {
@@ -201,7 +201,7 @@ h1 {
 
 .footer {
   width: 100%;
-  height: 4.5svh;
+  height: 5svh;
   line-height: 1;
   background-color: white;
   text-align: center;
